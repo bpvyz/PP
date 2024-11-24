@@ -1,18 +1,4 @@
-main() {
-    int x, y;
-    char letter;
-    float pi;
-    bool flag;
-
-    x = 0#d123;           % decimalna konstanta int %
-    y = 0#o77;            % oktalna konstanta int %
-    pi = 0.314E+1;        % float konstanta %
-    letter = 'A';         % char konstanta %
-    flag = true;          % bool konstanta %
-
-    loop (x > y && flag) {
-        x = x - 1;
-        redo (x < 0#d100); % Redo sa novim uslovom %
-        y = y + 1;
-    }
+loop ( ID && CONST ) { 
+    ID = CONST ;
+    redo ( ID || CONST ) ; 
 }

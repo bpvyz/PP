@@ -90,5 +90,8 @@ bool_const = true|false
 {char_const}                   { return new Yytoken(sym.CHAR_CONST, yytext(), yyline, yycolumn); }
 {bool_const}                   { return new Yytoken(sym.BOOL_CONST, yytext(), yyline, yycolumn); }
 
+// eof
+<<EOF>>                        { return new Yytoken(sym.EOF, "#", yyline, yycolumn); }
+
 // obrada grešaka
 .                              { System.err.println("ERROR: " + yytext()); }

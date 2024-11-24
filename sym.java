@@ -1,6 +1,6 @@
 public class sym {
-    public final static int EOF = 0;
-    
+    public final static int EOF = 0; // Kraj ulaza (#)
+
     // Ključne reči
     public final static int MAIN = 1;
     public final static int INT = 2;
@@ -35,10 +35,10 @@ public class sym {
     public final static int NE = 21;
 
     // Specijalni simboli
-    public final static int LBRACE = 22;
-    public final static int RBRACE = 23;
-    public final static int LEFTPAR = 24;
-    public final static int RIGHTPAR = 25;
-    public final static int SEMICOLON = 26;
-    public final static int COMMA = 27;
+    public final static int LBRACE = 22;    // "{"
+    public final static int RBRACE = 23;    // "}"
+    public final static int LEFTPAR = 24;  // "("
+    public final static int RIGHTPAR = 25; // ")"
+    public final static int SEMICOLON = 26; // ";"
+    public final static int COMMA = 27;    // ","
 }
